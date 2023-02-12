@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background: #aaa;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 40px;
+    background: #aaaa;
+}
+
+nav button {
+    border: none;
+    background: transparent;
+    color: purple;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 12px;
+    text-align: center;
+}
+
+button {
+    background: purple;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+    margin: 0 auto;
+    
+}
+
+#status {
+    width: 80%;
+    margin: 0 auto;
+}

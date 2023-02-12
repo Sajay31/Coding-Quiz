@@ -27,8 +27,6 @@ const handleAns = function(choice) {
     if(choice == questions[qI].C) {
         statusDiv.innerHTML = '<h1 style="color:green;border-bottom:2px solid green;">Correct!!!</h1>';
 
-        
-       
     } 
 // if the answer is incorrect display this and subtract time.
     else{
@@ -59,7 +57,7 @@ const subFx = () => {
     localStorage.highScore = JSON.stringify(store);
     main.innerHTML=`<h1>Highscores</h1>
     <ul></ul>
-    <button>Go Back</button>`;
+    <button onclick="location.reload()">Go Back</button>`;
 
     store.forEach(player => {
         console.log(player);

@@ -1,3 +1,4 @@
+// list of questions and answers including correct answer
 const questions = [
     {
         Q: 'Question 1',

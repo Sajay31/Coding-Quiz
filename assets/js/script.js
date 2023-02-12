@@ -1,3 +1,4 @@
+// list of variables for each item
 let qI = 0;
 let clockId;
 let time = 60;
@@ -8,27 +9,28 @@ const statusDiv = document.getElementById('status');
 let store = localStorage.highscores ? eval(localStorage.highscores) : [];
 
 const runClock = () => {
+    // stops count down at 0 
     if(time<1){
         time = 1;
         clearInterval(clockId);
         done();
     }
-
+//countdown 
     time--;
     clock.innerText = time;
 
 };
-
+// 
 const handleAns = function(choice) {
 
-
+// if the answer is correct display this.
     if(choice == questions[qI].C) {
         statusDiv.innerHTML = '<h1 style="color:green;border-bottom:2px solid green;">Correct!!!</h1>';
 
         
        
     } 
-
+// if the answer is incorrect display this and subtract time.
     else{
         statusDiv.innerHTML = '<h1 style="color:red;border-bottom:2px solid red;">Incorrect!!!</h1>';
         time -= 10;
